@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url("Fundo.png") no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* LOGO */
+.logo {
+    margin-top: 15px;
+}
+
+.logo img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+/* APP */
+.app {
+    width: 100%;
+    max-width: 900px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+/* TÍTULO */
+.titulo {
+    background: black;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.titulo h1 {
+    color: white;
+    font-size: 18px;
+}
+
+/* PRODUTOS */
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.produto {
+    background: rgba(0,0,0,0.7);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.produto img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.add {
+    margin: 6px 0;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* PEDIDO */
+.pedido {
+    margin-top: 20px;
+    color: white;
+}
+
+.caixa-pedido {
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 6px;
+    min-height: 140px;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.item-pedido {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.item-pedido button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* CUPOM */
+.titulo-cupom {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.cupom {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: none;
+}
+
+.btn-cupom {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: none;
+    background: #27ae60;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* TOTAL */
+.total {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* FINALIZAR */
+.finalizar {
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    margin: 15px 0;
+    color: white;
+    font-size: 13px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* TELA PAGAMENTO */
+.tela-pagamento {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.tela-pagamento .box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 350px;
+}
+
+.tela-pagamento label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.tela-pagamento input,
+.tela-pagamento select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.tela-pagamento button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-confirmar {
+    background: #27ae60;
+    color: white;
+}
+
+.btn-cancelar {
+    background: #ccc;
+}
+/* TELA FINAL */
+.tela-final {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.box-final {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 90%;
+    max-width: 350px;
+}
+
+.box-final h2 {
+    margin-bottom: 10px;
+}
+
+.box-final p {
+    margin-bottom: 8px;
+}
+
+.btn-novo {
+    margin-top: 15px;
+    padding: 12px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    background: #27ae60;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* mantém tudo igual ao seu anterior */
+
+.valores p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.subtotal {
+    color: #ddd;
+}
+
+.desconto {
+    color: #27ae60;
+}
+
+.total {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* OBSERVAÇÕES */
+.titulo-obs {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.obs {
+    width: 100%;
+    min-height: 60px;
+    margin-top: 5px;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+}

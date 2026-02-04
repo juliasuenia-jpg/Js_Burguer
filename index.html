@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Burguer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="logo">
+    <img src="logo.png" alt="JS Burguer">
+</div>
+
+<div class="app">
+
+    <div class="titulo">
+        <h1>REALIZE O SEU PEDIDO!</h1>
+    </div>
+
+    <div class="produtos">
+        <div class="produto">
+            <img src="Hamburguer.png" alt="Hamburguer">
+            <button class="add" data-preco="12">Add +</button>
+            <p>Hamburguer</p>
+            <span>R$ 12,00</span>
+        </div>
+
+        <div class="produto">
+            <img src="X_burguer.png" alt="X-Burguer">
+            <button class="add" data-preco="14">Add +</button>
+            <p>X-Burguer</p>
+            <span>R$ 14,00</span>
+        </div>
+
+        <div class="produto">
+            <img src="X_bacon.png" alt="X-Bacon">
+            <button class="add" data-preco="14">Add +</button>
+            <p>X-Bacon</p>
+            <span>R$ 14,00</span>
+        </div>
+
+        <div class="produto">
+            <img src="X_Frango.png" alt="X-Frango">
+            <button class="add" data-preco="14">Add +</button>
+            <p>X-Frango</p>
+            <span>R$ 14,00</span>
+        </div>
+
+        <div class="produto">
+            <img src="X_salada.png" alt="X-Salada">
+            <button class="add" data-preco="12">Add +</button>
+            <p>X-Salada</p>
+            <span>R$ 12,00</span>
+        </div>
+
+        <div class="produto">
+            <img src="X_tudo.png" alt="X-Tudo">
+            <button class="add" data-preco="20">Add +</button>
+            <p>X-Tudo</p>
+            <span>R$ 20,00</span>
+        </div>
+    </div>
+
+    <div class="pedido">
+        <p>SEU PEDIDO:</p>
+        <div class="caixa-pedido"></div>
+
+        <p class="titulo-cupom">Cupom de Desconto</p>
+        <input class="cupom" placeholder="Digite o cupom">
+        <button class="btn-cupom">Aplicar</button>
+
+        <div class="valores">
+            <p class="subtotal">Subtotal: R$ 0,00</p>
+            <p class="desconto">Desconto: R$ 0,00</p>
+            <p class="total">TOTAL: R$ 0,00</p>
+        </div>
+
+        <p class="titulo-obs">Observações</p>
+        <textarea class="obs" placeholder="Ex: Sem verdura"></textarea>
+    </div>
+
+    <button class="finalizar">Finalizar Pedido</button>
+</div>
+
+<footer>
+    <p>© 2026 JS Burguer</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
